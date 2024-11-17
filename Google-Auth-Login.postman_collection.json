@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "c7f80ac6-8006-4ea8-8843-db67290e19a7",
+		"name": "Google-Auth-Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39797338"
+	},
+	"item": [
+		{
+			"name": "Google-Auth-Login generate-qr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/generate-qr?emailId=vipin@gatest.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"generate-qr"
+					],
+					"query": [
+						{
+							"key": "emailId",
+							"value": "vipin@gatest.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google-Auth-Login login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_id\": \"vipin@gatest.com\",\r\n    \"password\": \"Op90##op\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google-Auth-Login verify-otp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aXBpbmdhVGVzdCIsImlhdCI6MTczMTg1NjMxMSwiZXhwIjoxNzMxODU5OTExfQ.SpMatNTHsNxOXDrHkM4np2gE1zTja_0RXS024DPO0jU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_id\": \"vipin@gatest.com\",\r\n    \"login_otp\": 293804,\r\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aXBpbmdhVGVzdCIsImlhdCI6MTczMTg1NDk5Mn0.yksGs8qk8Dy5S8AbVrpGaWlqDnCCTDGFhYYhr1AZYlc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/verifyTotp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"verifyTotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google-Auth-Login register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_id\": \"vipin@gatest.com\",\r\n    \"password\": \"Op90##op\",\r\n    \"full_name\": \"vipin sharma\",\r\n    \"user_name\": \"vipingaTest\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
