@@ -2,6 +2,7 @@ package com.vipin.googleAuthLogin.service;
 
 import com.vipin.googleAuthLogin.model.UserData;
 import com.vipin.googleAuthLogin.repository.UserRepository;
+import com.vipin.googleAuthLogin.service.implementation.CustomUserDetailsService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

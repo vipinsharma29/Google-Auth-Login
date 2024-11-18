@@ -4,6 +4,8 @@ import com.vipin.googleAuthLogin.dto.UserLoginDto;
 import com.vipin.googleAuthLogin.dto.UserRegistrationDto;
 import com.vipin.googleAuthLogin.model.UserData;
 import com.vipin.googleAuthLogin.repository.UserRepository;
+import com.vipin.googleAuthLogin.service.implementation.AuthenticationService;
+import com.vipin.googleAuthLogin.service.implementation.GoogleAuthService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

@@ -1,4 +1,4 @@
-package com.vipin.googleAuthLogin.service;
+package com.vipin.googleAuthLogin.service.implementation;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

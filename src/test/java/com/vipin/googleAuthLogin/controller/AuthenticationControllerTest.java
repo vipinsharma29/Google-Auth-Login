@@ -1,7 +1,7 @@
 package com.vipin.googleAuthLogin.controller;
 
-import com.vipin.googleAuthLogin.service.AuthenticationService;
-import com.vipin.googleAuthLogin.service.JwtService;
+import com.vipin.googleAuthLogin.service.implementation.AuthenticationService;
+import com.vipin.googleAuthLogin.service.implementation.JwtService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

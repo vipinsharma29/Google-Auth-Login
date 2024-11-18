@@ -1,4 +1,4 @@
-package com.vipin.googleAuthLogin.service;
+package com.vipin.googleAuthLogin.service.implementation;
 
 
 import com.google.zxing.BarcodeFormat;

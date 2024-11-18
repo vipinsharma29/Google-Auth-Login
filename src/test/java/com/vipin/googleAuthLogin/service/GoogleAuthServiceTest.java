@@ -1,6 +1,6 @@
 package com.vipin.googleAuthLogin.service;
 
-import com.google.zxing.WriterException;
+import com.vipin.googleAuthLogin.service.implementation.GoogleAuthService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

@@ -2,8 +2,8 @@ package com.vipin.googleAuthLogin.controller;
 
 import com.vipin.googleAuthLogin.dto.*;
 import com.vipin.googleAuthLogin.model.UserData;
-import com.vipin.googleAuthLogin.service.AuthenticationService;
-import com.vipin.googleAuthLogin.service.JwtService;
+import com.vipin.googleAuthLogin.service.implementation.AuthenticationService;
+import com.vipin.googleAuthLogin.service.implementation.JwtService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
